@@ -16,11 +16,14 @@
  *     public ListNode(int x) { val = x; }
  * }
  */
-public class Solution {
-    public ListNode AddTwoNumbers(ListNode l1, ListNode l2) {
-        return AddListNodes(l1, l2, 0);
-    }
-    private ListNode AddListNodes(ListNode l1, ListNode l2, int carry)
+public class Solution
+    {
+        public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
+        {
+            return AddListNodes(l1, l2, 0);
+        }
+
+        private ListNode AddListNodes(ListNode l1, ListNode l2, int carry)
         {
             ListNode res = null;
             int sum = 0;
@@ -48,4 +51,4 @@ public class Solution {
             }
             return res;
         }
-}
+    }
