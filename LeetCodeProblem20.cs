@@ -12,24 +12,6 @@ using System.Collections.Generic;
 
 namespace PalindromeNumber
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Solution os = new Solution();
-            //Console.WriteLine(os.IsValid("()"));
-            //Console.WriteLine(os.IsValid("([])"));
-            //Console.WriteLine(os.IsValid("({[{}]})"));
-            //Console.WriteLine(os.IsValid("()()"));
-            //Console.WriteLine(os.IsValid("(){"));
-            //Console.WriteLine(os.IsValid("(]][[)"));
-            //Console.WriteLine(os.IsValid("([)"));
-            Console.WriteLine(os.IsValid("()[]{}"));
-            Console.WriteLine(os.IsValid("(]"));
-            Console.WriteLine(os.IsValid("([)]"));
-            Console.ReadKey();
-        }
-    }
     public class Solution
     {
         public bool IsValid(string s)
