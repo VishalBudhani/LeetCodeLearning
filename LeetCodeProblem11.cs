@@ -1,3 +1,11 @@
+//Merge Two Sorted Lists
+//Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
+
+//Example:
+
+//Input: 1->2->4, 1->3->4
+//Output: 1->1->2->3->4->4
+
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,48 +14,6 @@ using System.Threading.Tasks;
 
 namespace MergeTwoListNodes
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            ListNode temp = null;
-            ListNode l1 = new ListNode(1);
-            ListNode current = l1;
-            ListNode l2 = new ListNode(1);
-            ListNode current2 = l2;
-            int i = 2;
-            while (i <= 4)
-            {
-                temp = new ListNode(i);
-                current.next = temp;
-                current = temp;
-                i+=2;
-            }
-            i = 3;
-            while (i <= 4)
-            {
-                temp = new ListNode(i);
-                current2.next = temp;
-                current2 = temp;
-                i += 1;
-            }
-
-            Solution s = new Solution();
-            var result = s.MergeTwoLists(l1, l2);
-            l1 = new ListNode(5);
-            l2 = new ListNode(1);
-            current2 = l2;
-            i = 2;
-            while (i <= 4)
-            {
-                temp = new ListNode(i);
-                current2.next = temp;
-                current2 = temp;
-                i += 1;
-            }
-            result = s.MergeTwoLists(l1, l2);
-        }
-    }
     public class ListNode
     {
         public int val;
