@@ -66,7 +66,7 @@ namespace LeetCodeProblem83
                     current = current.next;
                 }
                 else 
-                // if current node value is equal to next node value
+                // if current node value is equal to the next node value
                 // skip the node next to the current node and point the current node to the node after that
                 {
                     current.next = current.next.next;
